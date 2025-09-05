@@ -1,0 +1,19 @@
+space-weather-streaming/
+├─ data/                          # put CSVs here (example: ace_dscovr.csv)
+├─ models/
+│  ├─ __init__.py
+│  ├─ lstm_baseline.py            # PyTorch LSTM baseline
+├─ online/
+│  ├─ __init__.py
+│  ├─ ogd.py                      # Online Gradient Descent implementation
+├─ utils/
+│  ├─ data_loader.py              # streaming data loader
+│  ├─ regret.py                   # empirical regret utilities
+│  ├─ metrics.py
+├─ train_batch.py                 # train offline baseline
+├─ run_stream.py                  # streaming experiment runner (OGD vs baseline)
+├─ requirements.txt
+├─ README.md
+└─ notebooks/
+   └─ experiments.ipynb
+
